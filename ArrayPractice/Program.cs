@@ -49,6 +49,26 @@ namespace ArrayPractice
                 Console.WriteLine("Not all numbers from the first array are included in the second array.");
             }
             #endregion
+
+            #region Task3
+            int[] numbers2 = { 1, 2, 3, 4, 5, 6, 7, 8, 10, 10 };
+            bool isEqual = false;
+
+            for (int i = 0; i < numbers2.Length - 1; i++)
+            {
+                if (numbers2[i] == numbers2[i + 1])
+                {
+                    isEqual = true;
+                }
+            }
+
+            if (!isEqual)
+            {
+                Console.WriteLine("No");
+            }
+            else Console.WriteLine("Yes");
+            #endregion
+
         }
     }
 }
